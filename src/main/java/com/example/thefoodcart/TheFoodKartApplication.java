@@ -1,4 +1,4 @@
-package com.example.The_food_kart;
+package com.example.thefoodcart;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

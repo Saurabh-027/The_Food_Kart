@@ -1,12 +1,12 @@
-package com.example.The_food_kart.entity;
+package com.example.thefoodcart.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table
+/*@Entity
+@Table(name = "Admin")
 public class Admin {
     @Id
     @Column(name = "id")
@@ -19,4 +19,4 @@ public class Admin {
     int availableAmount;
     @Column(name = "status")
     String status;
-}
+}*/

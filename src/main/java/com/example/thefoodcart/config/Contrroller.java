@@ -1,4 +1,4 @@
-package com.example.The_food_kart.config;
+package com.example.thefoodcart.config;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 

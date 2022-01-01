@@ -1,4 +1,4 @@
-package com.example.The_food_kart;
+package com.example.thefoodcart;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

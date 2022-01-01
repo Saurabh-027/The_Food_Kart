@@ -1,20 +1,20 @@
-package com.example.The_food_kart.entity;
-
-import org.hibernate.annotations.Cache;
+package com.example.thefoodcart.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
+/*@Entity
 @Table
 public class Delivery {
     @Id
     @Column(name = "user_id")
-    int userId;
+    private Integer userId;
+
     @Column(name = "order_id")
-    int orderId;
+    private Integer orderId;
+
     @Column(name = "address")
-    String address;
-}
+    private String address;
+}*/

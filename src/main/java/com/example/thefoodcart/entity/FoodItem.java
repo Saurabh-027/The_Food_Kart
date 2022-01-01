@@ -1,4 +1,4 @@
-package com.example.The_food_kart.entity;
+package com.example.thefoodcart.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,15 +7,18 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class FoodRestaurants {
+public class FoodItem {
 
     @Id
     @Column(name = "restaurant_id")
-    int restaurantId;
+    private Integer restaurantId;
+
     @Column(name = "item_id")
-    int itemId;
+    private Integer itemId;
+
     @Column(name = "foodname")
-    String foodname;
+    private String foodname;
+
     @Column(name = "price")
-    int price;
+    private Integer price;
 }
