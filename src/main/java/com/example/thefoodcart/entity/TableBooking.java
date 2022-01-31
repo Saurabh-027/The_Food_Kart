@@ -16,9 +16,8 @@ public class TableBooking {
     @JoinColumn(name = "restaurant_id")
     private Restaurant restaurant;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
+    @Column(name = "user_id")
+    private Integer userId;
 
     @Column(name = "status")
     private TableBookingStatus tableBookingStatus;
@@ -39,12 +38,12 @@ public class TableBooking {
         this.restaurant = restaurant;
     }
 
-    public User getUser() {
-        return user;
+    public Integer getUser() {
+        return userId;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setUser(Integer userId) {
+        this.userId = userId;
     }
 
     public TableBookingStatus getTableBookingStatus() {

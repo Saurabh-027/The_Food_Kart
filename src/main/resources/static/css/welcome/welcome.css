@@ -99,7 +99,7 @@
     .aboutClass {
         height: 350px;
         width: 1520px;
-        background-image: url("bg.jpg");
+        background-image: url("../../images/welcome/bg.jpg");
         background-size: cover;
         background-clip: border-box;
         text-align: center;

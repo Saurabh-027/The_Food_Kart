@@ -10,10 +10,10 @@ public class Order {
     @Id
     @GeneratedValue
     @Column(name = "order_id")
-    private Long orderId;
+    private Integer orderId;
 
     @ManyToOne
-    @JoinColumn(name = "food_item")
+    @JoinColumn(name = "food_item_id")
     private FoodItem foodItem;
 
     @Column(name = "user_id")
@@ -25,11 +25,11 @@ public class Order {
     @Column(name = "customer_address")
     private String customerAddress;
 
-    public Long getOrderId() {
+    public Integer getOrderId() {
         return orderId;
     }
 
-    public void setOrderId(Long orderId) {
+    public void setOrderId(Integer orderId) {
         this.orderId = orderId;
     }
 

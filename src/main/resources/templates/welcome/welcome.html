@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="welcome.css">-->
-    <link th:href="@{/welcome_page/welcome.css}" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/welcome/welcome.css}">
+    <!--<link href="welcome.css" rel="stylesheet" />-->
     <title>Home</title>
 </head>
 
@@ -17,19 +17,19 @@
         <div class="head">
             <div class="navigation"><a href="#section1" style="color: black"><i class="fa fa-user-circle-o"></i>About us</a></div>
             <div class="navigation"><a href="#contact" style="color: black"><i class="fa fa-fw fa-envelope"></i>Contact</a></div>
-            <div class="navigation"><a th:href="@{/login_page/login.html}" style="color: black"><i class="fa fa-fw fa-user"></i>Login/Sign-up</a></div>
+            <div class="navigation"><a th:href="@{/login.html}" style="color: black"><i class="fa fa-fw fa-user"></i>Login/Sign-up</a></div>
             <h3 class="heading">THE FOOD KART</h3>
         </div>
     </header>
     <div class="imagebor">
-        <img th:src="@{/welcome_page/bg5.jpg}" width="1532" height="350">
+        <img th:src="@{/images/welcome/bg5.jpg}" width="1532" height="350">
     </div>
     <section class="picsection">
         <div class="container">
             <div class="row">
                 <div class="col-sm">
                     <div class="card">
-                        <img th:src="@{/welcome_page/background.jpg}" height="200%" width="100%" />
+                        <img th:src="@{/images/welcome/background.jpg}" height="200%" width="100%" />
                         <div class="card-bottom">
                             <p class="h4 m-0 mt-2 text-center">Day's Special</p>
                         </div>
@@ -38,7 +38,7 @@
 
                 <div class="col-sm">
                     <div class="card">
-                        <img th:src="@{/welcome_page/gallery_08.jpg}" height="200%" width="100%">
+                        <img th:src="@{/images/welcome/gallery_08.jpg}" height="200%" width="100%">
                         <div class="card-bottom">
                             <p class="h4 m-0 mt-2 text-center">Order Online</p>
                         </div>
@@ -47,7 +47,7 @@
 
                 <div class="col-sm">
                     <div class="card">
-                        <img th:src="@{/welcome_page/rest.jpg}" height="200%" width="100%">
+                        <img th:src="@{/images/welcome/rest.jpg}" height="200%" width="100%">
                         <div class="card-bottom">
                             <p class="h4 m-0 mt-2 text-center">Restaurants</p>
                         </div>

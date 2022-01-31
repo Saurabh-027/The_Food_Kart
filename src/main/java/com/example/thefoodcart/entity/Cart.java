@@ -7,8 +7,9 @@ import javax.persistence.*;
 public class Cart {
 
     @Id
+    @GeneratedValue
     @Column(name = "cart_id")
-    private String cartId;
+    private Integer cartId;
 
     @Column(name ="user_id")
     private String userid;
@@ -23,11 +24,11 @@ public class Cart {
     @Column(name ="total_price")
     private Integer totalprice;
 
-    public String getCartId() {
+    public Integer getCartId() {
         return cartId;
     }
 
-    public void setCartId(String cartId) {
+    public void setCartId(Integer cartId) {
         this.cartId = cartId;
     }
 

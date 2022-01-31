@@ -1,25 +1,28 @@
+/*
 package com.example.thefoodcart.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Description;
 import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 
-@Configuration
+//@Configuration
+//@EnableWebMvc
 public class Webconfig implements WebMvcConfigurer {
     @Bean
-    @Description("Thymeleaf template resolver serving HTML 5")
+//    @Description("Thymeleaf template resolver serving HTML 5")
     public ClassLoaderTemplateResolver templateResolver(){
         var templateResolver = new ClassLoaderTemplateResolver();
 
         templateResolver.setPrefix("static/welcome_page/");
         templateResolver.setCacheable(false);
-        templateResolver.setSuffix(".html");
+        templateResolver.setSuffix(".jsp");
         templateResolver.setTemplateMode("HTML5");
         templateResolver.setCharacterEncoding("UTF-8");
 
@@ -36,7 +39,7 @@ public class Webconfig implements WebMvcConfigurer {
     }
 
     @Bean
-    @Description("Thymeleaf view resolver")
+ //   @Description("Thymeleaf view resolver")
     public ViewResolver viewResolver() {
 
         var viewResolver = new ThymeleafViewResolver();
@@ -54,3 +57,4 @@ public class Webconfig implements WebMvcConfigurer {
 
 
 }
+*/

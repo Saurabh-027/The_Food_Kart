@@ -1,0 +1,94 @@
+.head {
+    background-color: rgba(173, 18, 70, 0.89);
+    text-align: center;
+    padding: 37px;
+}
+
+.heading {
+    font-variant: small-caps;
+    font-size: 45px;
+    text-align: left;
+}
+
+.res {
+    width: 100%;
+    border: 3px solid rgba(173, 18, 70, 0.89);
+    padding: 10px;
+    font-variant: small-caps;
+    font-size: 35px;
+    text-align: center;
+}
+
+.r {
+    padding-left: 370px;
+}
+
+.secbor {
+    margin-bottom: 50px;
+}
+
+.menuborder {
+    font-variant: small-caps;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    bottom: 30px;
+    border: 3px solid rgba(173, 18, 70, 0.89);
+    fill: rgba(173, 18, 70, 0.89);
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.menu {
+    padding-left: 150px;
+    margin-top: 10px;
+    padding-right: 150px;
+}
+
+.image {
+    background: #eee;
+}
+
+.menutext {
+    float: right;
+    width: 88.3333%;
+    color: #6e6e6e;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    padding-right: 40px;
+    font-style: black;
+}
+
+.fooddetails {
+    font-size: small;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.price {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+}
+
+.foot {
+    font-variant: small-caps;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    bottom: 30px;
+    border: 3px solid rgba(173, 18, 70, 0.89);
+    fill: rgba(173, 18, 70, 0.89);
+}
+
+.but {
+    float: right;
+    padding-top: 42px;
+}
+
+#bottom-border {
+    background-color: black;
+    height: 5px;
+}

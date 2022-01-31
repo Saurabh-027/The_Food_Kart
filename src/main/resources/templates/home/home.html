@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="home.css">-->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home/home.css}">
+    <title>Home</title>
+</head>
+
+<body>
+<header>
+    <div class="head">
+        <div class="navigation"><a href="#section1" style="color: black"><i class="fa fa-user-circle-o"></i>About us</a></div>
+        <div class="navigation"><a href="#contact" style="color: black"><i class="fa fa-fw fa-envelope"></i>Contact</a></div>
+        <div class="navigation">Welcome</div>
+        <h3 class="heading">THE FOOD KART</h3>
+    </div>
+</header>
+<div class="imagebor">
+    <img th:src="@{/images/home/bg5.jpg}" width="1532" height="350">
+</div>
+<section class="picsection">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card">
+                    <img th:src="@{/images/home/background.jpg}" height="200%" width="100%" />
+                    <div class="card-bottom">
+                        <p class="h4 m-0 mt-2 text-center">Day's Special</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card">
+                    <img th:src="@{/images/home/gallery_08.jpg}" height="200%" width="100%">
+                    <div class="card-bottom">
+                        <p class="h4 m-0 mt-2 text-center"><a th:href="@{/restaurant.html}">Order Online</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card">
+                    <img th:src="@{/images/home/rest.jpg}" height="200%" width="100%">
+                    <div class="card-bottom">
+                        <p class="h4 m-0 mt-2 text-center"><a th:href="@{/TableBooking.html}">Restaurants</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="contact-heading">
+        <p id="contact">Contact</p>
+    </div>
+    <div class="contact-text">
+        <p>
+            It's food lovers like you who inspire us to do what we do. Your comments, ideas and questions push us to go that extra mile, every time. So drop us a line!
+        </p>
+    </div>
+    <div class="btblock">
+        <a href="contact">
+            <button type="button" class="btn-block bt">get in touch</button>
+        </a>
+    </div>
+</section>
+
+<section class="aboutClass">
+    <div class="aboutContent">
+        <div class="aboutHeading">
+            <p id="section1">ABOUT US</p>
+        </div>
+        <div class="aboutcontent">
+            <p>For us, it's not just about bringing you good food from your favourite restaurants. It's about making a connection, which is why we sit down with the chefs, dreaming up menus that will arrive fresh and full of flavour. Try us!</p>
+        </div>
+    </div>
+</section>
+<section class="footsection">
+    <div class="footnote">
+        <p>The Food KART</p>
+    </div>
+
+</section>
+
+</body>
+
+</html>

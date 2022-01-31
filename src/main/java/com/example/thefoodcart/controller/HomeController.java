@@ -1,16 +1,16 @@
-/*
-package com.example.thefoodcart.config;
+package com.example.thefoodcart.controller;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class Contrroller {
-    @GetMapping("/welcome")
-    public ModelAndView showwel() {
+public class HomeController {
+
+    @GetMapping(value = {"/", "/welcome"})
+    public ModelAndView welcomePage(){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("registration_page/registration");
+        modelAndView.setViewName("welcome/welcome");
         return modelAndView;
     }
 }
-*/

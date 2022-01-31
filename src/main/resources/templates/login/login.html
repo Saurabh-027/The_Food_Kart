@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>login</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" th:href="@{/css/login/login.css}">
 </head>
 
 <body>
@@ -15,20 +15,23 @@
     </div>
 </header>
 
-<form>
+<form th:action="@{/login}" method="post" th:object="${user}">
 
     <div class="container">
         <label><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="uname" required>
+        <input type="text" placeholder="Enter Email" name="uname" th:field="*{email}" required>
 
         <label><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" placeholder="Enter Password" name="psw" th:field="*{password}" required>
 
         <button type="submit">Login</button>
-        <button type="button"><a href="/registration_page/registration.html">Sign-up</a></button>
+        <button type="button"><a th:href="@{/registration.html}">Sign-up</a></button>
         <label>
             <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
+        <div>
+         <!--   <p th:if="${#fields.hasErrors('cred')}" style="color:red">Invalid Credentials</p>-->
+        </div>
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
